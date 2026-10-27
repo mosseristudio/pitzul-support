@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support – Pitzul</title>
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<style>
+@font-face { font-family: 'Frank Ruhl Libre'; src: url('fonts/FrankRuhlLibre-VF.ttf') format('truetype'); font-weight: 300 900; font-display: swap; }
+@font-face { font-family: 'Assistant'; src: url('fonts/Assistant-VF.ttf') format('truetype'); font-weight: 200 800; font-display: swap; }
+:root { --bg: #F6F3EE; --surface: #FFFFFF; --text: #1B1A18; --muted: #6B675F; --accent: #213F65; --line: #E4DED3; color-scheme: light dark; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0A0A0B; --surface: #161618; --text: #F1ECE4; --muted: #9A9388; --accent: #C4A574; --line: #2A2A2D; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.65 'Assistant', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+main { max-width: 640px; margin: 0 auto; padding: 56px 24px 64px; }
+header { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 40px; }
+.brand { display: flex; align-items: center; gap: 14px; color: var(--text); text-decoration: none; font-weight: 600; letter-spacing: .04em; }
+.brand img { width: 44px; height: 44px; border-radius: 10px; }
+.lang { color: var(--accent); text-decoration: none; font-weight: 600; }
+h1 { font: 400 clamp(32px, 6vw, 42px)/1.2 'Frank Ruhl Libre', Georgia, serif; margin: 0 0 20px; }
+h2 { font: 400 24px/1.3 'Frank Ruhl Libre', Georgia, serif; margin: 40px 0 12px; }
+p, li { color: var(--text); }
+a { color: var(--accent); }
+strong { font-weight: 600; }
+ul { padding-inline-start: 22px; }
+footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 15px; }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <a class="brand" href="./"><img src="icon.png" alt=""><span>Pitzul</span></a>
+  <a class="lang" href="he/index.html" hreflang="he">עברית</a>
+</header>
+<h1>Support – Pitzul</h1>
+<p>Pitzul shares out the expenses of a trip or an event: one person enters them from their phone, and<br>at the end everyone knows who pays whom, and how much.</p>
+<h2>Contact</h2>
+<p>A question, a problem or an idea: write to <a href="mailto:mosseri.studio@gmail.com">mosseri.studio@gmail.com</a>. We read every message and answer in Hebrew or English.</p>
+<h2>Questions people ask</h2>
+<p><strong>Where does the odd cent go?</strong> Every amount is kept in whole cents. When an amount doesn't divide<br>exactly, everyone first gets their share rounded down, and the cents left over go out one at a<br>time: first to whoever's division left the largest remainder, and in a tie by the order people<br>were added to the trip. 100.00 between three is 33.34, 33.33 and 33.33, so the shares always add<br>up to exactly the expense.</p>
+<p><strong>Why isn't the list of transfers always the shortest?</strong> It's built from the largest debt to the<br>largest credit. That's simple, predictable and usually short, but sometimes one transfer fewer is<br>possible. Always finding the shortest is a very hard problem to compute.</p>
+<p><strong>How do I move a trip to another phone?</strong> In the trip's menu: "Export a backup". On the other<br>phone: "Import a backup" on the trips screen. Importing always adds a new trip and never<br>overwrites anything.</p>
+<p><strong>Why can't I delete a person?</strong> Because they still have expenses. The screen shows which can be<br>fixed automatically and which you need to open and fix. Once they have none left, deleting works.</p>
+<p><strong>I deleted an expense by mistake.</strong> Right after deleting there's "Undo". Later: the trip's menu →<br>"Restore the deleted expense" (the last one deleted).</p>
+<p><strong>Can I pay through the app?</strong> No. Each transfer has "Copy amount", to paste into Bit, PayBox or<br>anything else.</p>
+<h2>Privacy and terms</h2>
+<p><a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of use</a></p>
+<footer>Pitzul · <a href="mailto:mosseri.studio@gmail.com">mosseri.studio@gmail.com</a></footer>
+</main>
+</body>
+</html>
